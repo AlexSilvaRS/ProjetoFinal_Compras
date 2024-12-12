@@ -1,0 +1,17 @@
+{
+    "name": "aluno.saolucas/compras",
+    "autoload": {
+        "psr-4": {
+            "AlunoSaolucas\\Compras\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AlexSilvaRS",
+            "email": "alex29003@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^2.1"
+    }
+}

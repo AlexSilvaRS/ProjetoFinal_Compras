@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    /*background-image: linear-gradient(90deg, #001C6B 0%, #0F745A 100%);*/
+    background-image: url(../img/logo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap:10px;
+}
+
+header {
+    position: fixed; /* Adiciona esta linha */
+    top: 0; /* Adiciona esta linha */
+     width: 100%;
+     /*background-color: #fff;*/
+     /*background-image: url(../img/nuvens2.jpg);*/
+     background-image: linear-gradient(90deg, #001C6B 0%, #0F745A 100%);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    /* border-radius: 8px;*/
+     color: white;
+     z-index: 1000; /* Adiciona esta linha para garantir que o header fique acima de outros elementos */
+ }
+ header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    /*background-color: #fff;*/
+   
+    padding: 15px;
+    border-radius: 8px;
+  /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    width: 300px;
+
+    text-align: center;
+}
+.login-container {
+    background-color: #fff;
+    margin-top: 160px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+
+    text-align: center;
+}
+
+.weather-info {
+   
+   gap: 10px;
+    border-radius: 8px;
+  /*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    width: 300px;
+
+    text-align: center;
+}
+.login-container  img {
+    max-width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+    margin-bottom: 20px; /* Espaçamento entre o logo e o título */
+    border-radius: 4px;
+}
+
+.login-container  h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: #0F745A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+}
+
+.button:hover {
+    background-color: #001C6B;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.button.voltar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0F745A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button.voltar:hover {
+    background-color: #001C6B;
+}
+
+
+
