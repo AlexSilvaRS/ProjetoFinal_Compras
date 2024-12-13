@@ -65,7 +65,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadastro_usuario.css">
     <title>Cadastro de Usuário</title>
-   
+    <link rel="shortcut icon" href="img/compras.png" type="image/png">
 </head>
 
 <body>

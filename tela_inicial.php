@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/tela_inicial.css">
     <title>Bem-vindo ao Sistema de Compras</title>
-    
+    <link rel="shortcut icon" href="./img/Logo2.png" type="image/Logo2.png">
 </head>
 
 <body>

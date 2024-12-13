@@ -60,6 +60,9 @@ $sql = "
 ";
 $result = $conn->query($sql);
 
+// Inicializar a variável para o total geral
+$total_geral = 0;
+
 // Fechar a conexão ao final
 $conn->close();
 ?>
@@ -72,6 +75,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/visualizar_compras.css">
     <title>Visualizar Compras</title>
+    <link rel="shortcut icon" href="./img/Logo2.png" type="image/Logo2.png">
 </head>
 
 <body>
@@ -79,7 +83,7 @@ $conn->close();
         <img src="./img/logo1.png" alt="Logo">
         <h2>Compras Cadastradas</h2>
 
-        <table>
+        <table >
             <thead>
                 <tr>
                     <th>Nome do Produto</th>
@@ -92,7 +96,12 @@ $conn->close();
             </thead>
             <tbody>
                 <?php if ($result->num_rows > 0) { ?>
-                    <?php while ($row = $result->fetch_assoc()) { ?>
+                    <?php while ($row = $result->fetch_assoc()) { 
+                        // Calcula o valor total da compra
+                        $total_compra = $row['quantidade'] * $row['preco'];
+                        // Atualiza o total geral
+                        $total_geral += $total_compra;
+                    ?>
                         <tr>
                             <td><?php echo htmlspecialchars($row['nome']); ?></td>
                             <td><?php echo $row['quantidade']; ?></td>
@@ -114,6 +123,12 @@ $conn->close();
                 <?php } ?>
             </tbody>
         </table>
+
+        <?php if ($total_geral > 0) { ?>
+            <div>
+                <h3>Total de Compras: R$ <?php echo number_format($total_geral, 2, ',', '.'); ?></h3>
+            </div>
+        <?php } ?>
 
         <button class="button print-button" onclick="window.print()">Imprimir Compras</button>
         <a href="exportar_excel.php">Gerar arquivo Excel</a>

@@ -37,6 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['cadastrar'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadastro_produto.css">
     <title>Cadastro de Categoria</title>
+    <link rel="shortcut icon" href="img/compras.png" type="image/png">
    
 </head>
 

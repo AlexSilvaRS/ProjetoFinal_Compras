@@ -59,6 +59,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
     <title>Login de Usuário</title>
+    <link rel="shortcut icon" href="./img/Logo2.png" type="image/Logo2.png">
 
 </head>
 

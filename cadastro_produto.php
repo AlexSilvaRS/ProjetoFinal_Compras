@@ -43,12 +43,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['cadastrar'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadastro_produto.css">
     <title>Cadastro de Produto</title>
+    <link rel="shortcut icon" href="img/compras.png" type="image/png">
 </head>
 
 <body>
     <div class="container">
         <img src="./img/logo1.png" alt="Logo">
         <h2>Cadastro de Produto</h2>
+
 
         <!-- Mensagens de sucesso ou erro -->
         <?php if (isset($mensagem)) { ?>

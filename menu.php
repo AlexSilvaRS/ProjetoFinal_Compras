@@ -16,6 +16,7 @@ if (!isset($_SESSION['usuario'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/menu.css">
     <title>Menu Principal</title>
+    <link rel="shortcut icon" href="img/compras.png" type="image/png">
 
 </head>
 
@@ -50,6 +51,9 @@ if (!isset($_SESSION['usuario'])) {
         </a>
         <a href="visualizar_compras.php">
             <button class="button">Compras Cadastradas</button>
+        </a>
+        <a href="visualizarComprasPorCategoria.php">
+            <button class="button">Compras por Categoria</button>
         </a>
         
         <a href="login.php">Sair</a>

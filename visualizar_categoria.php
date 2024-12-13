@@ -70,7 +70,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/visualizar_compras.css">
     <title>Visualizar Categorias</title>
-
+    <link rel="shortcut icon" href="img/compras.png" type="image/png">
 </head>
 
 <body>
