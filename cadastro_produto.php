@@ -4,7 +4,7 @@ require_once('./config/config.php');
 require_once('./CLASSES/Database.php');
 require_once('./CLASSES/Compras.php');
 require_once('./CLASSES/Categorias.php');
-
+date_default_timezone_set('America/Sao_Paulo');
 session_start();
 
 $compra = new Compras($db);

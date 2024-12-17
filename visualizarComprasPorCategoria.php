@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+date_default_timezone_set('America/Sao_Paulo');
 // Verifica se o usuário está logado, senão redireciona para o login
 if (!isset($_SESSION['usuario'])) {
     header("Location: login.php");

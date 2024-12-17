@@ -3,7 +3,7 @@
 include_once'./CLASSES/Database.php';
 include_once'./CONFIG/config.php';
 include_once'./CLASSES/Compras.php';
-
+date_default_timezone_set('America/Sao_Paulo');
 $compra = new Compras($db);
 
 $result =  $compra->listarExcel();
