@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['cadastrar'])) {
 <body>
     <div class="container">
     <img src="./img/logo1.png" alt="Logo">  
-        <h2>Cadastro de Produto</h2>
+        <h2>Cadastro de Categoria</h2>
 
         <?php if (isset($mensagem)) { ?>
             <p class="success"><?php echo $mensagem; ?></p>

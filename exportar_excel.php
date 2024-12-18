@@ -52,6 +52,10 @@ try {
             try {
                 // Converte a data para timestamp
                 $timestamp = strtotime($res['data_adicao']);
+
+                // Corrige o fuso horário para São Paulo (UTC -3)
+                $timestamp = $timestamp - 3 * 60 * 60;  // Subtraímos 3 horas
+
                 
                 if ($timestamp !== false) {
                     $excelDateValue = Date::PHPToExcel($timestamp);

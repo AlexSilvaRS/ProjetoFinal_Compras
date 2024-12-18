@@ -103,7 +103,7 @@ $conn->close();
                 <input type="password" id="senha" name="senha" required>
             </div>
             <button type="submit" name="login" class="button">Entrar</button><br>
-            <button onclick="window.location.href='tela_inicial.php'" class="button voltar">Voltar</button>
+            <button onclick="window.location.href='index.php'" class="button voltar">Voltar</button>
 
         </form>
 
