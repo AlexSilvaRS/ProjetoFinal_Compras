@@ -49,7 +49,7 @@ body {
 }
 
 .button {
-    background-color: #4CAF50;
+    background-color: #0F745A;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -59,7 +59,7 @@ body {
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: #001C6B;
 }
 
 .error {
